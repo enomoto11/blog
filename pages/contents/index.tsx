@@ -1,5 +1,6 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
+import { ContentsBody } from "../../components/contentns/Body";
+import styles from "../../styles/Home.module.css";
 
 export default function Contents() {
   return (
@@ -10,7 +11,9 @@ export default function Contents() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/flash_lightning_ray_icon_231454.ico" />
       </Head>
-      <main className={styles.main}></main>
+      <main className={styles.main}>
+        <ContentsBody />
+      </main>
     </>
   );
 }
